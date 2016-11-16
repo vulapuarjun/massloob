@@ -6,6 +6,8 @@
 //  Copyright © 2016 ArjunVulapu. All rights reserved.
 //
 
+
+
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"prudhvi");
 }
 
 
