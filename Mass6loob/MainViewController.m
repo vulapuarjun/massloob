@@ -106,12 +106,12 @@ UIButton *secondBtn ;
         mainLbl.backgroundColor = [UIColor clearColor];
         mainLbl.textAlignment = NSTextAlignmentCenter;
         //mainLbl.font = [UIFont systemFontOfSize:14.0];
-        [mainLbl setFont:[UIFont fontWithName:@"Arial-BoldMT" size:16]];
+        [mainLbl setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
         
 
         mainLbl.textColor=[UIColor whiteColor];
         [view addSubview:mainLbl];
-        secLable = [[UILabel alloc] initWithFrame:CGRectMake(0, -20, 200, 21)];
+        secLable = [[UILabel alloc] initWithFrame:CGRectMake(0, -20, 220, 21)];
         secLable.backgroundColor = [UIColor clearColor];
         secLable.textAlignment = NSTextAlignmentCenter;
 
