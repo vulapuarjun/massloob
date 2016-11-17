@@ -7,7 +7,8 @@
 //
 
 #import "MainViewController.h"
-
+#import "PostYourCVViewController.h"
+#import "RecruitViewController.h"
 @interface MainViewController ()
 @property (nonatomic, strong) NSMutableArray *items;
 @end
@@ -92,7 +93,7 @@ UIButton *secondBtn ;
     {
 //        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 600.0f)];
 //        ((UIImageView *)view).image = [UIImage imageNamed:@"page.png"];
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 400.0f)];
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 300.0f)];
         [view setBackgroundColor:[UIColor whiteColor]];
         // view.contentMode = UIViewContentModeCenter;
         image1 = [[UIImageView alloc] initWithFrame:CGRectMake(20, 50, 160, 160)];
@@ -129,26 +130,26 @@ UIButton *secondBtn ;
         //label.textAlignment = NSTextAlignmentCenter;
         innerLbl.font = [UIFont systemFontOfSize:14.0];
         [view addSubview:innerLbl];
+//
+//        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 268, 160, 21)];
+//        firstBtn.backgroundColor = [UIColor clearColor];
+//        //label.textAlignment = NSTextAlignmentCenter;
+//        firstBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
+//        firstBtn.tag = 1;
 
-        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 368, 160, 21)];
+        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 240, 160, 21)];
         firstBtn.backgroundColor = [UIColor clearColor];
         //label.textAlignment = NSTextAlignmentCenter;
         firstBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         firstBtn.tag = 1;
-
-        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 368, 160, 21)];
-        firstBtn.backgroundColor = [UIColor clearColor];
-        //label.textAlignment = NSTextAlignmentCenter;
-        firstBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
-        firstBtn.tag = 1;
-        firstBtn.backgroundColor=[UIColor blueColor];
+        firstBtn.backgroundColor=THEME_COLOR;
         
-        secondBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 340, 160, 21)];
+        secondBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 268, 160, 21)];
         secondBtn.backgroundColor = [UIColor clearColor];
         //label.textAlignment = NSTextAlignmentCenter;
         secondBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         secondBtn.tag = 2;
-        secondBtn.backgroundColor=[UIColor blueColor];
+        secondBtn.backgroundColor=THEME_COLOR;
         [view addSubview:firstBtn];
         [view addSubview:secondBtn];
     }
@@ -171,7 +172,9 @@ UIButton *secondBtn ;
         [firstBtn setTitle:@"Recruit" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Post Your CV" forState:UIControlStateNormal];
         mainLbl.text=@"Searching For Job?";
-        [secondBtn addTarget:self action:@selector(nothing:) forControlEvents:UIControlEventTouchUpInside];
+        [secondBtn addTarget:self action:@selector(postYourCV:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(recruit:) forControlEvents:UIControlEventTouchUpInside];
+
         innerLbl.text=@"Find Jobs";
 
 
@@ -180,7 +183,7 @@ UIButton *secondBtn ;
     else if(index==1){
         [firstBtn setTitle:@"Find Volunteers" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Enrool As a Volunteer" forState:UIControlStateNormal];
-        [secondBtn addTarget:self action:@selector(donothing:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(donothing:) forControlEvents:UIControlEventTouchUpInside];
         mainLbl.text=@"Searching For Volunters";
 
         innerLbl.text=@"Volunteers";
@@ -199,17 +202,21 @@ UIButton *secondBtn ;
 
     return view;
 }
--(void)dosomething:(id)sender
+-(void)recruit:(id)sender
     {
     NSLog(@"sucss2");
+        RecruitViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"RecruitViewController"];
+        [self.navigationController pushViewController:newView animated:YES];
 }
 -(void)donothing:(id)sender
 {
     NSLog(@"sucss1");
 }
--(void)nothing:(id)sender
+-(void)postYourCV:(id)sender
 {
     NSLog(@"sucss0");
+    PostYourCVViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"PostYourCVViewController"];
+    [self.navigationController pushViewController:newView animated:YES];
 }
 
 @end

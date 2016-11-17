@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "iCarousel.h"
-
-@interface MainViewController : UIViewController<iCarouselDataSource, iCarouselDelegate>
+#import "BaseViewController.h"
+@interface MainViewController : BaseViewController<iCarouselDataSource, iCarouselDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *mainLbl;
 @property (strong, nonatomic) IBOutlet UILabel *secondLbl;

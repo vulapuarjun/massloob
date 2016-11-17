@@ -110,14 +110,16 @@ BOOL isRTL_app()
                             action:@selector(refreshItems)
                   forControlEvents:UIControlEventValueChanged];
     
+    self.navigationController.navigationBar.barTintColor = THEME_COLOR;
+    self.navigationController.navigationBar.translucent = NO;
+    
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAds)];
-//
-//    self.navigationController.navigationBar.opaque = YES;
-//    self.navigationController.navigationBar.translucent = NO;
+
+    //self.navigationController.navigationBar.opaque = YES;
+   // self.navigationController.navigationBar.translucent = NO;
     
     //self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-   // self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:210.0f/255.0f green:153.0f/255.0f blue:70.0f/255.0f alpha:1];
-   // [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,  nil]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];    //[self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,  nil]];
   
     
     /*
@@ -129,7 +131,7 @@ BOOL isRTL_app()
     }
     */
     
-    //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+   // self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
      
     
 //    [[UITableViewCell appearance] setTintColor:[UIColor colorWithRed:0.161  green:0.569  blue:0.718 alpha:1]];
