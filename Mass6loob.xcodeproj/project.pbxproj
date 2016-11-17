@@ -107,6 +107,9 @@
 		6E1C41721DDD8EA000A8DFA6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E1C41691DDD8EA000A8DFA6 /* SVProgressHUD.bundle */; };
 		6E1C41731DDD8EA000A8DFA6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C416B1DDD8EA000A8DFA6 /* SVProgressHUD.m */; };
 		6E1C41741DDD8EA000A8DFA6 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C416D1DDD8EA000A8DFA6 /* SVRadialGradientLayer.m */; };
+		6E1C41771DDD973100A8DFA6 /* PostYourCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41761DDD973100A8DFA6 /* PostYourCVViewController.m */; };
+		6E1C417A1DDDA97800A8DFA6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41791DDDA97800A8DFA6 /* LoginViewController.m */; };
+		6E1C417D1DDDAA1F00A8DFA6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C417C1DDDAA1F00A8DFA6 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +277,12 @@
 		6E1C416B1DDD8EA000A8DFA6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		6E1C416C1DDD8EA000A8DFA6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		6E1C416D1DDD8EA000A8DFA6 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		6E1C41751DDD973100A8DFA6 /* PostYourCVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostYourCVViewController.h; sourceTree = "<group>"; };
+		6E1C41761DDD973100A8DFA6 /* PostYourCVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostYourCVViewController.m; sourceTree = "<group>"; };
+		6E1C41781DDDA97800A8DFA6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6E1C41791DDDA97800A8DFA6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6E1C417B1DDDAA1F00A8DFA6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		6E1C417C1DDDAA1F00A8DFA6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,12 +338,18 @@
 				6E1C405A1DDC785E00A8DFA6 /* AppDelegate.m */,
 				6E1C405C1DDC785E00A8DFA6 /* ViewController.h */,
 				6E1C405D1DDC785E00A8DFA6 /* ViewController.m */,
+				6E1C41781DDDA97800A8DFA6 /* LoginViewController.h */,
+				6E1C41791DDDA97800A8DFA6 /* LoginViewController.m */,
+				6E1C417B1DDDAA1F00A8DFA6 /* RegisterViewController.h */,
+				6E1C417C1DDDAA1F00A8DFA6 /* RegisterViewController.m */,
 				6E1C40FA1DDD8D6A00A8DFA6 /* BaseViewController.h */,
 				6E1C40FB1DDD8D6A00A8DFA6 /* BaseViewController.m */,
 				6E1C408E1DDC79DA00A8DFA6 /* MainViewController.h */,
 				6E1C408F1DDC79DA00A8DFA6 /* MainViewController.m */,
 				6E1C40F71DDD842500A8DFA6 /* RecruitViewController.h */,
 				6E1C40F81DDD842500A8DFA6 /* RecruitViewController.m */,
+				6E1C41751DDD973100A8DFA6 /* PostYourCVViewController.h */,
+				6E1C41761DDD973100A8DFA6 /* PostYourCVViewController.m */,
 				6E1C405F1DDC785E00A8DFA6 /* Main.storyboard */,
 				6E1C40621DDC785E00A8DFA6 /* Assets.xcassets */,
 				6E1C40641DDC785E00A8DFA6 /* LaunchScreen.storyboard */,
@@ -794,6 +809,7 @@
 				6E1C414D1DDD8E2700A8DFA6 /* UIWebView+AFNetworking.m in Sources */,
 				6E1C41151DDD8DEB00A8DFA6 /* ResizeLabel.m in Sources */,
 				6E1C41481DDD8E2700A8DFA6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				6E1C417D1DDDAA1F00A8DFA6 /* RegisterViewController.m in Sources */,
 				6E1C405E1DDC785E00A8DFA6 /* ViewController.m in Sources */,
 				6E1C416F1DDD8EA000A8DFA6 /* README.md in Sources */,
 				6E1C41461DDD8E2700A8DFA6 /* AFImageDownloader.m in Sources */,
@@ -817,9 +833,11 @@
 				6E1C414A1DDD8E2700A8DFA6 /* UIImageView+AFNetworking.m in Sources */,
 				6E1C41141DDD8DEB00A8DFA6 /* README.md in Sources */,
 				6E1C405B1DDC785E00A8DFA6 /* AppDelegate.m in Sources */,
+				6E1C41771DDD973100A8DFA6 /* PostYourCVViewController.m in Sources */,
 				6E1C40901DDC79DA00A8DFA6 /* MainViewController.m in Sources */,
 				6E1C41111DDD8DEB00A8DFA6 /* NSData+Base64.m in Sources */,
 				6E1C41711DDD8EA000A8DFA6 /* SVProgressAnimatedView.m in Sources */,
+				6E1C417A1DDDA97800A8DFA6 /* LoginViewController.m in Sources */,
 				6E1C413D1DDD8E2700A8DFA6 /* AFHTTPSessionManager.m in Sources */,
 				6E1C41471DDD8E2700A8DFA6 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				6E1C40FC1DDD8D6A00A8DFA6 /* BaseViewController.m in Sources */,
