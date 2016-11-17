@@ -11,5 +11,7 @@
 
 @interface MainViewController : UIViewController<iCarouselDataSource, iCarouselDelegate>
 
+@property (strong, nonatomic) IBOutlet UILabel *mainLbl;
+@property (strong, nonatomic) IBOutlet UILabel *secondLbl;
 @property (nonatomic, strong) IBOutlet iCarousel *carousel;
 @end

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Mass6loob/MainViewController.m"
-            timestampString = "500994265.73099"
+            timestampString = "501054145.188913"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "-dosomething:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Mass6loob/MainViewController.m"
-            timestampString = "500994265.73099"
+            timestampString = "501054145.188913"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-donothing:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mass6loob/MainViewController.m"
+            timestampString = "501053664.453873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-carousel:viewForItemAtIndex:reusingView:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
