@@ -110,6 +110,10 @@
 		6E1C41771DDD973100A8DFA6 /* PostYourCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41761DDD973100A8DFA6 /* PostYourCVViewController.m */; };
 		6E1C417A1DDDA97800A8DFA6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41791DDDA97800A8DFA6 /* LoginViewController.m */; };
 		6E1C417D1DDDAA1F00A8DFA6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C417C1DDDAA1F00A8DFA6 /* RegisterViewController.m */; };
+		6E1C41801DDDD84E00A8DFA6 /* LookingForFreelancerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C417F1DDDD84E00A8DFA6 /* LookingForFreelancerViewController.m */; };
+		6E1C41831DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41821DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.m */; };
+		6E1C41861DDDD89A00A8DFA6 /* FindVolunteersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41851DDDD89A00A8DFA6 /* FindVolunteersViewController.m */; };
+		6E1C41891DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C41881DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -283,6 +287,14 @@
 		6E1C41791DDDA97800A8DFA6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6E1C417B1DDDAA1F00A8DFA6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		6E1C417C1DDDAA1F00A8DFA6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		6E1C417E1DDDD84E00A8DFA6 /* LookingForFreelancerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookingForFreelancerViewController.h; sourceTree = "<group>"; };
+		6E1C417F1DDDD84E00A8DFA6 /* LookingForFreelancerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookingForFreelancerViewController.m; sourceTree = "<group>"; };
+		6E1C41811DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadAsAFreelauncerViewController.h; sourceTree = "<group>"; };
+		6E1C41821DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadAsAFreelauncerViewController.m; sourceTree = "<group>"; };
+		6E1C41841DDDD89A00A8DFA6 /* FindVolunteersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindVolunteersViewController.h; sourceTree = "<group>"; };
+		6E1C41851DDDD89A00A8DFA6 /* FindVolunteersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindVolunteersViewController.m; sourceTree = "<group>"; };
+		6E1C41871DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnrollAsaVolunteerViewController.h; sourceTree = "<group>"; };
+		6E1C41881DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollAsaVolunteerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +362,14 @@
 				6E1C40F81DDD842500A8DFA6 /* RecruitViewController.m */,
 				6E1C41751DDD973100A8DFA6 /* PostYourCVViewController.h */,
 				6E1C41761DDD973100A8DFA6 /* PostYourCVViewController.m */,
+				6E1C417E1DDDD84E00A8DFA6 /* LookingForFreelancerViewController.h */,
+				6E1C417F1DDDD84E00A8DFA6 /* LookingForFreelancerViewController.m */,
+				6E1C41811DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.h */,
+				6E1C41821DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.m */,
+				6E1C41841DDDD89A00A8DFA6 /* FindVolunteersViewController.h */,
+				6E1C41851DDDD89A00A8DFA6 /* FindVolunteersViewController.m */,
+				6E1C41871DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.h */,
+				6E1C41881DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.m */,
 				6E1C405F1DDC785E00A8DFA6 /* Main.storyboard */,
 				6E1C40621DDC785E00A8DFA6 /* Assets.xcassets */,
 				6E1C40641DDC785E00A8DFA6 /* LaunchScreen.storyboard */,
@@ -821,12 +841,14 @@
 				6E1C41421DDD8E2700A8DFA6 /* AFURLSessionManager.m in Sources */,
 				6E1C415E1DDD8E4100A8DFA6 /* MCLocalizationSingleJSONFileDataSource.m in Sources */,
 				6E1C415D1DDD8E4100A8DFA6 /* MCLocalizationOneJSONFilePerLanguageDataSource.m in Sources */,
+				6E1C41831DDDD88600A8DFA6 /* UploadAsAFreelauncerViewController.m in Sources */,
 				6E1C41161DDD8DEB00A8DFA6 /* Utils.m in Sources */,
 				6E1C413E1DDD8E2700A8DFA6 /* AFNetworkReachabilityManager.m in Sources */,
 				6E1C41601DDD8E4100A8DFA6 /* README.md in Sources */,
 				6E1C41741DDD8EA000A8DFA6 /* SVRadialGradientLayer.m in Sources */,
 				6E1C40F91DDD842500A8DFA6 /* RecruitViewController.m in Sources */,
 				6E1C408D1DDC79AC00A8DFA6 /* iCarousel.m in Sources */,
+				6E1C41801DDDD84E00A8DFA6 /* LookingForFreelancerViewController.m in Sources */,
 				6E1C41411DDD8E2700A8DFA6 /* AFURLResponseSerialization.m in Sources */,
 				6E1C41401DDD8E2700A8DFA6 /* AFURLRequestSerialization.m in Sources */,
 				6E1C413F1DDD8E2700A8DFA6 /* AFSecurityPolicy.m in Sources */,
@@ -846,7 +868,9 @@
 				6E1C41731DDD8EA000A8DFA6 /* SVProgressHUD.m in Sources */,
 				6E1C41491DDD8E2700A8DFA6 /* UIButton+AFNetworking.m in Sources */,
 				6E1C41451DDD8E2700A8DFA6 /* AFAutoPurgingImageCache.m in Sources */,
+				6E1C41861DDDD89A00A8DFA6 /* FindVolunteersViewController.m in Sources */,
 				6E1C41701DDD8EA000A8DFA6 /* SVIndefiniteAnimatedView.m in Sources */,
+				6E1C41891DDDD8B900A8DFA6 /* EnrollAsaVolunteerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
