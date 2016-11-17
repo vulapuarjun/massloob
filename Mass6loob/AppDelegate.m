@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Utils.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //  [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:102.0f/255.0f green:80.0f/255.0f blue:57.0f/255.0f alpha:1]];
+//    UINavigationController *navigationController = (UINavigationController *) self.window.rootViewController;
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    
+//    if ([[Utils loggedInIsPresent] isEqualToString:@"LOGIN"]) {
+//        // Show the dashboard
+//        [navigationController pushViewController:[storyboard instantiateViewControllerWithIdentifier:@"MainViewController"] animated:NO];
+//    } else {
+//        // Login
+//        [navigationController pushViewController:[storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"] animated:NO];
+//    }
+
     return YES;
 }
 

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UPi-Cw-4Hv">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,28 +19,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="OFJ-tq-Gec">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="OFJ-tq-Gec"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xe-dd-YF6">
-                                <rect key="frame" x="16" y="232" width="288" height="104"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-nl-RDB">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
+                                        <frame key="frameInset" width="288" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFM-MN-SHu">
-                                        <rect key="frame" x="8" y="8" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-Pz-px2">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="0EV-Ty-T2t"/>
                                                     <constraint firstAttribute="height" constant="20" id="bQl-K8-IBa"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQQ-hj-Fqe">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="O17-p1-Vh0"/>
                                                 </constraints>
@@ -66,17 +57,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="172-pK-nUm">
-                                        <rect key="frame" x="8" y="56" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="f79-Ar-5lz">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="Lfx-hV-qfr"/>
                                                     <constraint firstAttribute="height" constant="20" id="l9x-Ik-HQh"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEi-gM-Lae">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="fNK-dX-FxD"/>
                                                 </constraints>
@@ -111,7 +99,6 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYY-6r-Cfw">
-                                <rect key="frame" x="8" y="518" width="138" height="30"/>
                                 <state key="normal" title="ForgetPassword?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -120,7 +107,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKV-LM-ern">
-                                <rect key="frame" x="174" y="518" width="138" height="30"/>
                                 <state key="normal" title="SignUp">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -129,7 +115,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-SO-UPR">
-                                <rect key="frame" x="8" y="488" width="304" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vOz-4L-ROQ"/>
@@ -189,27 +174,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-aa-RZN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-aa-RZN"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLw-ls-G3p">
-                                <rect key="frame" x="24" y="183" width="280" height="202"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-qz-ihY">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="202"/>
-                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-qz-ihY"/>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOm-jR-4X1">
-                                        <rect key="frame" x="4" y="8" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-x9-XUM">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="BVj-zC-Diu"/>
                                                     <constraint firstAttribute="width" constant="20" id="S3k-Ly-Yfk"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heb-bW-8sP">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="FLn-fH-OvY"/>
                                                 </constraints>
@@ -232,17 +209,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="382-CS-E0X">
-                                        <rect key="frame" x="4" y="56" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-Or-teO">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Dt6-An-pTc"/>
                                                     <constraint firstAttribute="width" constant="20" id="mfJ-qC-sbW"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRR-Vv-0HP">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Wu5-uy-gUD"/>
                                                 </constraints>
@@ -265,17 +239,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-yP-ygB">
-                                        <rect key="frame" x="4" y="104" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-mN-osF">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="7qg-Pj-t3A"/>
                                                     <constraint firstAttribute="height" constant="20" id="qK6-9S-6Lr"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcq-Ia-tQZ">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="dEq-y9-P1N"/>
                                                 </constraints>
@@ -298,17 +269,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-Gj-Mv0">
-                                        <rect key="frame" x="4" y="152" width="272" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone_number.png" translatesAutoresizingMaskIntoConstraints="NO" id="ylN-25-NoM">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="8uV-c8-Tyl"/>
                                                     <constraint firstAttribute="width" constant="20" id="c2v-eG-4gz"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PhoneNumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-n3-1Kj">
-                                                <rect key="frame" x="36" y="2.5" width="228" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="mul-Uy-oCY"/>
                                                 </constraints>
@@ -353,7 +321,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1L-rt-5W8">
-                                <rect key="frame" x="24" y="467" width="280" height="30"/>
+                                <frame key="frameInset" minX="24" minY="467" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register">
@@ -364,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmS-sK-6rZ">
-                                <rect key="frame" x="24" y="505" width="280" height="30"/>
+                                <frame key="frameInset" minX="24" minY="505" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Already Have An Account? Login Here">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -414,11 +382,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-7x-Jtj">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-7x-Jtj"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-5E-TR5" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="164" width="320" height="304"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="4PX-2L-anO"/>
@@ -426,7 +391,6 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-en-XbO">
-                                <rect key="frame" x="0.0" y="518" width="320" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6hg-a3-gdY"/>
                                 </constraints>
@@ -473,28 +437,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-g2-Chp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-g2-Chp"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z14-d0-y14">
-                                <rect key="frame" x="8" y="159" width="304" height="250"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="YN7-46-Msv">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="250"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZL-A2-5DD">
-                                        <rect key="frame" x="8" y="17" width="288" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-VO-dC7">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="0bd-Vs-Iii"/>
                                                     <constraint firstAttribute="width" constant="20" id="uwe-r4-86d"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKP-qC-vwM">
-                                                <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="CTF-Vh-vXN"/>
                                                 </constraints>
@@ -517,17 +474,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHY-K6-1tM">
-                                        <rect key="frame" x="8" y="65" width="288" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="Shq-qd-t3d">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="YeS-AA-qKX"/>
                                                     <constraint firstAttribute="height" constant="20" id="l8b-sO-Jc1"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUr-d2-lDt">
-                                                <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Dtu-QS-nvX"/>
                                                 </constraints>
@@ -536,14 +490,12 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-FY-nAr">
-                                                <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="O5G-Vf-yGi"/>
                                                     <constraint firstAttribute="width" constant="20" id="bvL-AJ-hHl"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-Xn-YHV">
-                                                <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                 <connections>
                                                     <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="vsz-ry-tir"/>
                                                 </connections>
@@ -566,17 +518,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-Lv-hQe">
-                                        <rect key="frame" x="8" y="113" width="288" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_country.png" translatesAutoresizingMaskIntoConstraints="NO" id="ygR-lB-7w5">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="93y-YB-Iyc"/>
                                                     <constraint firstAttribute="width" constant="20" id="VS5-6O-DRS"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iv7-tO-pXP">
-                                                <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="RgN-YW-NVu"/>
                                                 </constraints>
@@ -585,14 +534,12 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rf2-Ju-7DN">
-                                                <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="N4e-Gr-Kcs"/>
                                                     <constraint firstAttribute="width" constant="20" id="ixF-eQ-w7N"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-1a-7N0">
-                                                <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                 <connections>
                                                     <action selector="nationalityBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="hfI-9N-H9i"/>
                                                 </connections>
@@ -615,17 +562,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRf-Kv-1vW">
-                                        <rect key="frame" x="8" y="161" width="288" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_education.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-23-Lp1">
-                                                <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="HWX-vt-LaK"/>
                                                     <constraint firstAttribute="width" constant="20" id="RB3-Z6-BTL"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-G2-gwR">
-                                                <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="ONC-ng-2Xu"/>
                                                 </constraints>
@@ -634,14 +578,12 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOK-pf-5cw">
-                                                <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="RQB-mw-CQU"/>
                                                     <constraint firstAttribute="width" constant="20" id="dSJ-cG-EQT"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-2v-RIy">
-                                                <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                 <connections>
                                                     <action selector="educatationBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="fSm-LQ-VXG"/>
                                                 </connections>
@@ -664,7 +606,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db3-XN-GGa">
-                                        <rect key="frame" x="8" y="209" width="288" height="30"/>
+                                        <frame key="frameInset" minX="8" minY="209" width="288" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="SEARCH">
@@ -737,30 +679,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFl-bT-vRG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFl-bT-vRG"/>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5N-99-roS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfe-1i-uMa">
-                                        <rect key="frame" x="8" y="8" width="304" height="623"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHX-Td-8cq">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="623"/>
-                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_bg_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHX-Td-8cq"/>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-jr-S0N">
-                                                <rect key="frame" x="10" y="16" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="azi-ax-AsS">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="8RW-OP-Hbv"/>
                                                             <constraint firstAttribute="height" constant="20" id="F8Z-MN-Mte"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5uF-bt-ynm">
-                                                        <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="1go-NN-J2y"/>
                                                         </constraints>
@@ -783,17 +716,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMO-h0-khS">
-                                                <rect key="frame" x="10" y="64" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="dr8-xP-P6J">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="NP1-wa-wgQ"/>
                                                             <constraint firstAttribute="width" constant="20" id="Pad-9b-5DC"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-6Z-1MS">
-                                                        <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="mKz-fX-vxq"/>
                                                         </constraints>
@@ -816,17 +746,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPg-NF-h9C">
-                                                <rect key="frame" x="10" y="112" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="r53-Cw-YJv">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="Bvg-Lm-Ty6"/>
                                                             <constraint firstAttribute="height" constant="20" id="qoe-mO-N4c"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-iv-MK0">
-                                                        <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="9KI-UZ-0Xt"/>
                                                         </constraints>
@@ -835,14 +762,12 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-rq-5Eu">
-                                                        <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="ir8-4s-cuf"/>
                                                             <constraint firstAttribute="width" constant="20" id="pGb-MF-gpv"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or6-Tz-qqJ">
-                                                        <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="expBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="6sE-uk-aIq"/>
                                                             <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="1jQ-qM-VPf"/>
@@ -866,17 +791,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnQ-YP-uBm">
-                                                <rect key="frame" x="10" y="160" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-pU-KFf">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="YaL-WA-KAO"/>
                                                             <constraint firstAttribute="width" constant="20" id="e4V-bz-jPX"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwG-Zj-bMt">
-                                                        <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="Xsg-L5-u8o"/>
                                                         </constraints>
@@ -885,14 +807,12 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-8E-gtc">
-                                                        <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="MtB-aY-DZy"/>
                                                             <constraint firstAttribute="height" constant="20" id="z59-dq-VQT"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZD-eN-Lt3">
-                                                        <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="ebm-mY-qNe"/>
                                                             <action selector="nationalityBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="x2V-2g-KXl"/>
@@ -916,17 +836,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-HV-Dxu">
-                                                <rect key="frame" x="10" y="208" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="uCa-aY-gbf">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="9o7-ad-71O"/>
                                                             <constraint firstAttribute="height" constant="20" id="Afv-y4-g61"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ac-Fq-E70">
-                                                        <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="YdO-fE-hnd"/>
                                                         </constraints>
@@ -935,14 +852,12 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="GvC-Rq-P3M">
-                                                        <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="PYn-0X-PvB"/>
                                                             <constraint firstAttribute="width" constant="20" id="Z5i-SC-iww"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWu-3a-vY2">
-                                                        <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="educationBtnActon:" destination="YFu-fc-zR4" eventType="touchUpInside" id="MZp-08-DVS"/>
                                                             <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="9ZG-au-wgf"/>
@@ -966,17 +881,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJM-yS-saX">
-                                                <rect key="frame" x="10" y="256" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1W-n4-ijY">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="NDq-ks-cJi"/>
                                                             <constraint firstAttribute="height" constant="20" id="tgS-ah-F6A"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiI-EE-xui">
-                                                        <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="adO-Br-PKv"/>
                                                         </constraints>
@@ -985,14 +897,12 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-g7-UO0">
-                                                        <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="J7l-ug-CIM"/>
                                                             <constraint firstAttribute="width" constant="20" id="Xlk-pD-yqe"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPe-zu-k7P">
-                                                        <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="educationMastersBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="8q0-PH-gSQ"/>
                                                             <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="4uQ-yR-HFI"/>
@@ -1016,17 +926,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjU-Eh-VvJ">
-                                                <rect key="frame" x="10" y="304" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_experience.png" translatesAutoresizingMaskIntoConstraints="NO" id="k5c-iK-fuq">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="keI-G1-gdZ"/>
                                                             <constraint firstAttribute="width" constant="20" id="yap-hI-GvW"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-a9-Mi1">
-                                                        <rect key="frame" x="36" y="2.5" width="227" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="vAh-Dj-20f"/>
                                                         </constraints>
@@ -1038,14 +945,12 @@
                                                         </connections>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="GoT-M1-0XL">
-                                                        <rect key="frame" x="260" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="6HS-5J-7JP"/>
                                                             <constraint firstAttribute="width" constant="20" id="C1P-CQ-uwt"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-30-wJA">
-                                                        <rect key="frame" x="0.0" y="-0.5" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="experienceBtnAction:" destination="B0N-cS-dMi" eventType="touchUpInside" id="KIV-iM-mZ3"/>
                                                             <action selector="genderBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="ln3-Bx-4JN"/>
@@ -1069,17 +974,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-iK-Tgn">
-                                                <rect key="frame" x="10" y="352" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="7TY-mb-Nq4">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="kof-dD-eA0"/>
                                                             <constraint firstAttribute="height" constant="20" id="t9N-lx-HVz"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQj-tg-WdS">
-                                                        <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="aaH-bS-KYw"/>
                                                         </constraints>
@@ -1102,17 +1004,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLR-KE-jr7">
-                                                <rect key="frame" x="10" y="400" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-fi-zJe">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="BN0-Vs-Y6p"/>
                                                             <constraint firstAttribute="width" constant="20" id="r7U-qM-Qfx"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xk5-ud-RB2">
-                                                        <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="8so-k8-TbK"/>
                                                         </constraints>
@@ -1124,7 +1023,6 @@
                                                         </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haf-XT-xiO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="uploadCVBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="Q2N-8p-h58"/>
                                                         </connections>
@@ -1145,17 +1043,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-f6-U9A">
-                                                <rect key="frame" x="10" y="448" width="288" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="1mx-UI-SFF">
-                                                        <rect key="frame" x="8" y="10" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="Uc8-bN-CTD"/>
                                                             <constraint firstAttribute="height" constant="20" id="cpQ-Ri-taN"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUw-c2-WhF">
-                                                        <rect key="frame" x="36" y="2.5" width="244" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="m1Q-0p-RnU"/>
                                                         </constraints>
@@ -1167,7 +1062,6 @@
                                                         </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-bx-fNx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                                         <connections>
                                                             <action selector="uploadYourimageBtnAction:" destination="YFu-fc-zR4" eventType="touchUpInside" id="hoy-S9-OSl"/>
                                                         </connections>
@@ -1188,17 +1082,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDs-es-BMU">
-                                                <rect key="frame" x="10" y="496" width="288" height="100"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jobtitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7v-jY-pTO">
-                                                        <rect key="frame" x="8" y="8" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="S9Z-tC-VAs"/>
                                                             <constraint firstAttribute="width" constant="20" id="SBN-CF-yWB"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Discription" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-nU-PaN">
-                                                        <rect key="frame" x="36" y="0.0" width="252" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1262,7 +1153,6 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHg-hS-44a">
-                                        <rect key="frame" x="8" y="639" width="304" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1272,7 +1162,6 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXO-4h-YUS">
-                                        <rect key="frame" x="8" y="677" width="304" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1342,42 +1231,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZ5-xG-uHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4575" y="145.77464788732394"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="rGM-LI-mff">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ioe-bc-h0l" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p9z-A5-ww9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jBv-sH-quu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hAC-oO-ZTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Txs-As-gue">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UPi-Cw-4Hv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BrI-Og-Ohp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9w3-J5-POe" kind="relationship" relationship="rootViewController" id="be6-sn-xGc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="88x-GZ-bcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="414.375" y="825"/>
         </scene>
     </scenes>
     <resources>
