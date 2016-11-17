@@ -14,7 +14,7 @@
 
 #define KEY_LANGUAGE_EN @"en"
 #define KEY_LANGUAGE_AR @"ar"
-#define THEME_COLOR [UIColor colorWithRed:200.0f/255.0f green:153.0f/255.0f blue:70.0f/255.0f alpha:1];
+#define THEME_COLOR [self colorWithHexString:@"#21a6e0"];
 
 #define Localized(string) [MCLocalization stringForKey:string]
 
