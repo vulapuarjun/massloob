@@ -7,7 +7,8 @@
 //
 
 #import "MainViewController.h"
-
+#import "PostYourCVViewController.h"
+#import "RecruitViewController.h"
 @interface MainViewController ()
 @property (nonatomic, strong) NSMutableArray *items;
 @end
@@ -80,6 +81,10 @@ UIButton *secondBtn ;
    firstBtn = nil;
    secondBtn = nil;
     UIImageView *image1=nil;
+    UILabel *mainLbl=nil;
+    UILabel *secLable=nil;
+    UILabel *innerLbl=nil;
+
 
    
 
@@ -89,26 +94,63 @@ UIButton *secondBtn ;
     {
 //        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 600.0f)];
 //        ((UIImageView *)view).image = [UIImage imageNamed:@"page.png"];
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 400.0f)];
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 300.0f)];
         [view setBackgroundColor:[UIColor whiteColor]];
         // view.contentMode = UIViewContentModeCenter;
-        image1 = [[UIImageView alloc] initWithFrame:CGRectMake(20, 100, 160, 200)];
+        image1 = [[UIImageView alloc] initWithFrame:CGRectMake(20, 50, 160, 160)];
         image1.backgroundColor = [UIColor clearColor];
         //label.textAlignment = NSTextAlignmentCenter;
         [view addSubview:image1];
-        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 368, 160, 21)];
+        
+        
+        mainLbl = [[UILabel alloc] initWithFrame:CGRectMake(0, -42, 200, 21)];
+        mainLbl.backgroundColor = [UIColor clearColor];
+        mainLbl.textAlignment = NSTextAlignmentCenter;
+        //mainLbl.font = [UIFont systemFontOfSize:14.0];
+        [mainLbl setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
+        
+
+        mainLbl.textColor=[UIColor whiteColor];
+        [view addSubview:mainLbl];
+        secLable = [[UILabel alloc] initWithFrame:CGRectMake(0, -20, 220, 21)];
+        secLable.backgroundColor = [UIColor clearColor];
+        secLable.textAlignment = NSTextAlignmentCenter;
+
+        secLable.textColor=[UIColor whiteColor];
+
+        //label.textAlignment = NSTextAlignmentCenter;
+        secLable.font = [UIFont systemFontOfSize:14.0];
+        [view addSubview:secLable];
+        
+        innerLbl = [[UILabel alloc] initWithFrame:CGRectMake(20, 220, 160, 21)];
+        innerLbl.backgroundColor = [UIColor clearColor];
+        innerLbl.textAlignment = NSTextAlignmentCenter;
+        
+        //innerLbl.textColor=[UIColor whiteColor];
+        
+        //label.textAlignment = NSTextAlignmentCenter;
+        innerLbl.font = [UIFont systemFontOfSize:14.0];
+        [view addSubview:innerLbl];
+//
+//        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 268, 160, 21)];
+//        firstBtn.backgroundColor = [UIColor clearColor];
+//        //label.textAlignment = NSTextAlignmentCenter;
+//        firstBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
+//        firstBtn.tag = 1;
+
+        firstBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 240, 160, 21)];
         firstBtn.backgroundColor = [UIColor clearColor];
         //label.textAlignment = NSTextAlignmentCenter;
         firstBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         firstBtn.tag = 1;
-        firstBtn.backgroundColor=[UIColor blueColor];
+        firstBtn.backgroundColor=THEME_COLOR;
         
-        secondBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 340, 160, 21)];
+        secondBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 268, 160, 21)];
         secondBtn.backgroundColor = [UIColor clearColor];
         //label.textAlignment = NSTextAlignmentCenter;
         secondBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         secondBtn.tag = 2;
-        secondBtn.backgroundColor=[UIColor blueColor];
+        secondBtn.backgroundColor=THEME_COLOR;
         [view addSubview:firstBtn];
         [view addSubview:secondBtn];
     }
@@ -130,29 +172,52 @@ UIButton *secondBtn ;
     if(index==0){
         [firstBtn setTitle:@"Recruit" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Post Your CV" forState:UIControlStateNormal];
+        mainLbl.text=@"Searching For Job?";
+        [secondBtn addTarget:self action:@selector(postYourCV:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(recruit:) forControlEvents:UIControlEventTouchUpInside];
+
+        innerLbl.text=@"Find Jobs";
+
+
+        
     }
     else if(index==1){
         [firstBtn setTitle:@"Find Volunteers" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Enrool As a Volunteer" forState:UIControlStateNormal];
-        [secondBtn addTarget:self action:@selector(donothing:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(donothing:) forControlEvents:UIControlEventTouchUpInside];
+        mainLbl.text=@"Searching For Volunters";
+
+        innerLbl.text=@"Volunteers";
 
     }
     else{
     [firstBtn setTitle:@"Looking for a Freelancer" forState:UIControlStateNormal];
     [secondBtn setTitle:@"Upload As a Freelancer" forState:UIControlStateNormal];
         [secondBtn addTarget:self action:@selector(dosomething:) forControlEvents:UIControlEventTouchUpInside];
+        mainLbl.text=@"Searching For Freelancers?";
+        innerLbl.text=@"Free Lancer";
 
     }
     [image1 setImage:[UIImage imageNamed:@"find_jobs.png"]];
+    secLable.text=@"We Made It Simple!";
 
     return view;
 }
--(void)dosomething:(id)sender
+-(void)recruit:(id)sender
     {
-    NSLog(@"sucss");
+    NSLog(@"sucss2");
+        RecruitViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"RecruitViewController"];
+        [self.navigationController pushViewController:newView animated:YES];
 }
 -(void)donothing:(id)sender
 {
-    NSLog(@"sucss");
+    NSLog(@"sucss1");
 }
+-(void)postYourCV:(id)sender
+{
+    NSLog(@"sucss0");
+    PostYourCVViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"PostYourCVViewController"];
+    [self.navigationController pushViewController:newView animated:YES];
+}
+
 @end
