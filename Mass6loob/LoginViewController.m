@@ -51,7 +51,17 @@
      [self.navigationController pushViewController:newView animated:YES];
 }
 - (IBAction)loginBtnAction:(id)sender {
+    [self makePostCallForPage:USER_LOGIN withParams:@{} withRequestCode:1];
+    
+    }
+- (void) parseResult:(id) result withCode:(int)reqeustCode {
+    NSLog(@"%@",result);
+    
     MainViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     [self.navigationController pushViewController:newView animated:YES];
+
+    
 }
+
+
 @end

@@ -172,7 +172,9 @@ UIButton *secondBtn ;
         [firstBtn setTitle:@"Recruit" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Post Your CV" forState:UIControlStateNormal];
         mainLbl.text=@"Searching For Job?";
-        [secondBtn addTarget:self action:@selector(nothing:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(employer_btn:) forControlEvents:UIControlEventTouchUpInside];
+
+        [secondBtn addTarget:self action:@selector(employee_btn:) forControlEvents:UIControlEventTouchUpInside];
         innerLbl.text=@"Find Jobs";
 
 
@@ -181,7 +183,10 @@ UIButton *secondBtn ;
     else if(index==1){
         [firstBtn setTitle:@"Find Volunteers" forState:UIControlStateNormal];
         [secondBtn setTitle:@"Enrool As a Volunteer" forState:UIControlStateNormal];
-        [secondBtn addTarget:self action:@selector(donothing:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [firstBtn addTarget:self action:@selector(volunter_organisation_btn:) forControlEvents:UIControlEventTouchUpInside];
+
+        [secondBtn addTarget:self action:@selector(volunterr_btn:) forControlEvents:UIControlEventTouchUpInside];
         mainLbl.text=@"Searching For Volunters";
 
         innerLbl.text=@"Volunteers";
@@ -190,7 +195,8 @@ UIButton *secondBtn ;
     else{
     [firstBtn setTitle:@"Looking for a Freelancer" forState:UIControlStateNormal];
     [secondBtn setTitle:@"Upload As a Freelancer" forState:UIControlStateNormal];
-        [secondBtn addTarget:self action:@selector(dosomething:) forControlEvents:UIControlEventTouchUpInside];
+        [firstBtn addTarget:self action:@selector(freelance_project_btn:) forControlEvents:UIControlEventTouchUpInside];
+        [secondBtn addTarget:self action:@selector(freelancer_btn:) forControlEvents:UIControlEventTouchUpInside];
         mainLbl.text=@"Searching For Freelancers?";
         innerLbl.text=@"Free Lancer";
 
@@ -200,17 +206,38 @@ UIButton *secondBtn ;
 
     return view;
 }
--(void)dosomething:(id)sender
+
+-(void)employee_btn:(id)sender
     {
-    NSLog(@"sucss2");
+    NSLog(@"employee");
 }
--(void)donothing:(id)sender
+
+-(void)employer_btn:(id)sender
 {
-    NSLog(@"sucss1");
+    NSLog(@"employer");
 }
--(void)nothing:(id)sender
+
+-(void)volunterr_btn:(id)sender
 {
-    NSLog(@"sucss0");
+    NSLog(@"volunterr");
+    
 }
+
+-(void)volunter_organisation_btn:(id)sender
+{
+    NSLog(@"volunter_organisation");
+}
+
+-(void)freelancer_btn:(id)sender
+{
+    NSLog(@"freelancer");
+}
+
+-(void)freelance_project_btn:(id)sender
+{
+    NSLog(@"freelance_project");
+    
+}
+
 
 @end
