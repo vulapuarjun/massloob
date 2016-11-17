@@ -50,6 +50,7 @@ UIButton *secondBtn ;
     
     //configure carousel
     carousel.type = iCarouselTypeRotary;
+    carousel.pagingEnabled=YES;
 }
 
 - (void)viewDidUnload
