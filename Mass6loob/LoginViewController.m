@@ -56,7 +56,28 @@
      [self.navigationController pushViewController:newView animated:YES];
 }
 - (IBAction)loginBtnAction:(id)sender {
+    if([_emailTextfield.text length] == 0){
+        [self showErrorAlertWithMessage:Localized(@"empty_email")];
+    }else if([_passwordTxtField.text length] == 0){
+        [self showErrorAlertWithMessage:Localized(@"empty_password")];
+
+    }else
+    [self makePostCallForPage:USER_LOGIN withParams:@{@"email":_emailTextfield.text,@"password":_passwordTxtField.text}  withRequestCode:1];
+}
+- (void) parseResult:(id) result withCode:(int)reqeustCode {
+    NSLog(@"login:%@",result);
+    NSDictionary *array = [result objectAtIndex:0];
+    
+    if([[array valueForKey:@"status"]  isEqualToString:@"Success"]){
+        
     MainViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     [self.navigationController pushViewController:newView animated:YES];
+    }else{
+        [self showErrorAlertWithMessage:[array valueForKey:@"message"]];
+    }
+    
 }
+
+
+
 @end

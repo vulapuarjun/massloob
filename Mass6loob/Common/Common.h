@@ -20,9 +20,12 @@
 
 #define APP_DELEGATE (AppDelegate *) [[UIApplication sharedApplication] delegate]
 
-#define SERVER_URL @"http://clients.yellowsoft.in/lawyers/api"
+#define SERVER_URL @"http://clients.yellowsoft.in/ma6loob/api"
 
 #define USER_SIGNUP @"add-member.php"
+#define USER_LOGIN @"login.php"
+
+
 #define EDIT_MEMBER @"edit-member.php"
 #define EDIT_LAWYER @"edit-lawyer.php"
 #define LIKE_STATUS @"like-status.php"
@@ -38,7 +41,6 @@
 #define ADD_CHAT @"add-chat.php"
 #define LAWYER_SIGNUP @"add-lawyer.php"
 #define CHANGE_PASSWORD @"change-password.php"
-#define USER_LOGIN @"login.php"
 #define INFORMATION @"info.php"
 
 #define MEMBER_STATUS @"add-member-status.php"

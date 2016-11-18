@@ -39,8 +39,36 @@
 */
 
 - (IBAction)registerBtnAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    if([_nameTxtField.text length] == 0){
+        [self showErrorAlertWithMessage:@"empty_name"];
+    }else if([_emailTxtField.text length] == 0){
+        [self showErrorAlertWithMessage:@"empty_email"];
+    }else if([_passwordTxtfield.text length] == 0){
+        [self showErrorAlertWithMessage:@"empty_email"];
+    }else if ([_phoneNumberTxtFiled.text length] == 0){
+        [self showErrorAlertWithMessage:@"empty_phone"];
+
+    }else{
+        [self makePostCallForPage:USER_SIGNUP withParams:@{@"name":_nameTxtField.text,@"email":_emailTxtField.text,@"password":_passwordTxtfield.text,@"phone":_phoneNumberTxtFiled.text} withRequestCode:1];
+    }
+    
 }
+- (void) parseResult:(id) result withCode:(int)reqeustCode {
+    NSLog(@"signup:%@",result);
+    NSDictionary *array = [result objectAtIndex:0];
+    
+    if([[array valueForKey:@"status"]  isEqualToString:@"Success"]){
+        //[self showErrorAlertWithMessage:[array valueForKey:@"message"]];
+
+        [self.navigationController popViewControllerAnimated:YES];
+        [self showErrorAlertWithMessage:[array valueForKey:@"message"]];
+
+            }else{
+        [self showErrorAlertWithMessage:[array valueForKey:@"message"]];
+    }
+    
+}
+
 - (IBAction)loginHereBtnAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 
